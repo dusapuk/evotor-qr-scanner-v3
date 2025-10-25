@@ -24,9 +24,11 @@ jobs:
       - name: Download gradle-wrapper.jar
         run: |
           mkdir -p gradle/wrapper
-          curl -L https://services.gradle.org/distributions/gradle-8.7-bin.zip -o /tmp/gradle.zip
-          unzip -j /tmp/gradle.zip "*/lib/gradle-wrapper.jar" -d gradle/wrapper/
-          ls -la gradle/wrapper/
+          cd /tmp
+          curl -L https://services.gradle.org/distributions/gradle-8.7-bin.zip -o gradle.zip
+          unzip -q gradle.zip
+          find . -name "gradle-wrapper.jar" -type f -exec cp {} ${{ github.workspace }}/gradle/wrapper/ \;
+          ls -la ${{ github.workspace }}/gradle/wrapper/
       
       - name: Set up JDK 21
         uses: actions/setup-java@v4
