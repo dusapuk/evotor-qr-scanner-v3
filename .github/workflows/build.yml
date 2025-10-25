@@ -25,7 +25,8 @@ jobs:
         run: |
           mkdir -p gradle/wrapper
           curl -L https://services.gradle.org/distributions/gradle-8.7-bin.zip -o /tmp/gradle.zip
-          unzip -p /tmp/gradle.zip gradle-8.7/lib/gradle-wrapper.jar > gradle/wrapper/gradle-wrapper.jar
+          unzip -j /tmp/gradle.zip "*/lib/gradle-wrapper.jar" -d gradle/wrapper/
+          ls -la gradle/wrapper/
       
       - name: Set up JDK 21
         uses: actions/setup-java@v4
