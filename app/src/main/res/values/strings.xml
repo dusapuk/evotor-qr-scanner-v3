@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QR Сканер Эвотор</string>
+    <string name="logs_title">Логи приложения</string>
+    <string name="settings_title">Настройки</string>
+    <string name="scan_title">Сканирование</string>
+    <string name="order_detail_title">Детали заказа</string>
+    
+    <!-- MainActivity -->
+    <string name="main_title">Сканер заказов</string>
+    <string name="btn_scan">Сканировать QR-код</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_view_logs">Просмотр логов</string>
+    
+    <!-- ScanActivity -->
+    <string name="scan_status">Готов к сканированию</string>
+    <string name="scan_instruction">Наведите камеру на QR-код\nили используйте 2D-сканер</string>
+    
+    <!-- OrderDetailActivity -->
+    <string name="btn_issue_order">Выдать заказ</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_retry">Повторить</string>
+    
+    <!-- SettingsActivity -->
+    <string name="settings_api_url_hint">https://ваш-сервер.com</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_test_connection">Проверить подключение</string>
+    
+    <!-- LogViewerActivity -->
+    <string name="btn_refresh">Обновить</string>
+    <string name="btn_clear">Очистить</string>
+    <string name="btn_share">Экспорт</string>
+</resources>
+
